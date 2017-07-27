@@ -106,7 +106,10 @@ var config = {
   // Browser-sync
   // Reference: http://www.browsersync.io/docs/options/
 	'browserSync': { 
-		server  : DIR.DIST,
+		server  : {
+      baseDir   : DIR.DIST,
+      directory : true
+    },
     port    : 8080,
     // Don't show any notifications in the browser.
 		notify  : false
